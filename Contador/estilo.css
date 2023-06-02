@@ -1,0 +1,42 @@
+html {
+    background-image: linear-gradient(to left, darkgrey, black);
+
+}
+
+
+main {
+
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(92, 187, 92);
+
+
+}
+
+#numero {}
+
+#Contador {}
+
+#diminuir {}
+
+#aumentar,
+#diminuir,
+#reset {
+
+    font-size: 32px;
+    border-radius: 32px;
+    background-color: rgb(87, 87, 253);
+    font-style: italic;
+    color: aliceblue;
+
+}
+
+#aumentar:hover,
+#diminuir:hover,
+#reset:hover {
+
+    color: black;
+
+}

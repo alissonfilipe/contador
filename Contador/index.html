@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <main>
+        <p id="numero">0</p>
+        <p id="Contador">Contador</p>
+        <div>
+            <button id="diminuir">Diminuir</button>
+            <button id="aumentar">Aumentar</button>
+        </div>
+        <button id="reset">Resetar</button>
+    </main>
+
+
+    <script>
+        //numero do scripty
+        let numero = 0;
+        const num = document.getElementById('numero')
+
+        //botão do html
+        const aumentar = document.getElementById('aumentar')
+        const diminuir = document.getElementById('diminuir')
+        const zerar = document.getElementById('reset')
+
+        // evento de diminuir
+        diminuir.addEventListener('click', function () {
+            numero = numero - 1
+            num.innerHTML = numero
+        })
+
+        //evento aumentar
+        aumentar.addEventListener('click', function () {
+            numero = numero + 1;
+            num.innerHTML = numero
+        })
+
+        //evento resetar
+        zerar.addEventListener('click', function () {
+            numero = 0
+            num.innerHTML = numero
+        })
+
+
+    </script>
+</body>
+
+</html>
